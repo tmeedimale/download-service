@@ -3,6 +3,7 @@ package com.assignment.file.download.controller;
 import com.assignment.file.download.service.FileDownloadService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -17,6 +18,7 @@ import java.io.IOException;
 
 @Slf4j
 @RestController
+@RefreshScope
 public class FileDownloadController {
 
     @Autowired
